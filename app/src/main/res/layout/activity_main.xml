@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:textSize="16dp"
+        android:id="@+id/tulisan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="170dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tulisan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/btnpgl"
+        android:onClick="panggil"
+        android:background="@drawable/bg"
+        android:text="TELEPON"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnpgl"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/btnbuka"
+        android:onClick="buka"
+        android:background="@drawable/bg"
+        android:text="BUKA BROWSER"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent"
+        android:layout_below="@id/btnbuka"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="170dp"
+        android:textSize="16dp"
+        android:id="@+id/tulisan1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TENTANG APLIKASI"
+        android:layout_below="@id/tulisan1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#fff"
+        android:id="@+id/btninfo"
+        android:onClick="tentang"/>
+
+</RelativeLayout>
